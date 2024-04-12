@@ -157,6 +157,7 @@ function AdminDemo() {
         data[0].map((id, index) => ({
           id: Number(id),
           name: data[1][index],
+          voteCount : Number(data[2][index])
         }))
       );
     } catch (error) {

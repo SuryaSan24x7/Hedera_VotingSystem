@@ -147,7 +147,7 @@ const VoterDashboard = () => {
                             <tr>
                                 <th>ID</th>
                                 <th>Name</th>
-                                <th>Vote Count</th>
+                                
                             </tr>
                         </thead>
                         <tbody>
@@ -155,7 +155,7 @@ const VoterDashboard = () => {
                                 <tr key={candidate.id}>
                                     <td>{candidate.id}</td>
                                     <td>{candidate.name}</td>
-                                    <td>{candidate.voteCount}</td>
+                                    
                                 </tr>
                             ))}
                         </tbody>
