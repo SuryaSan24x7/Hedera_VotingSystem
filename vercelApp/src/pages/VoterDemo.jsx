@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 import abi from "../contracts/abi";
 import Vote from "../components/Vote";
 
-const VoterDemo = (contractAddress) => {
+const VoterDemo = ({ contractAddress }) => {
   
  
   const navigate = useNavigate(); 
@@ -21,7 +21,7 @@ const VoterDemo = (contractAddress) => {
   const [executeLinkSt, setExecuteLinkSt] = useState();
   const [activeElections, setActiveElections] = useState([]);
   const [candidates, setCandidates] = useState([]);
-
+  const contractAddress = {contractAddress};
   const handleAdmin = () => {
     navigate("/admin");
   };
