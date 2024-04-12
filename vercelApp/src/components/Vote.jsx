@@ -14,6 +14,7 @@ async function Vote(walletData, contractAddress, electionId, candidateId) {
         alert(`Voted successfully. ✅`);
     } catch (error) {
         console.error("Failed to vote:", error);
+        alert(`error `,error);
     }
 }
 
