@@ -174,7 +174,7 @@ function AdminDemo() {
     <div>
       <nav className="navbar navbar-dark bg-primary">
         <div className="container-fluid">
-          <a className="navbar-brand">Admin Dashboard</a>
+          <a className="navbar-brand">Admin Demo</a>
           <form className="d-flex">
             {!(contractAddress === undefined) && <button className="btn btn-outline-light" onClick={voterDemo}>
               Voter Dashbord Demo

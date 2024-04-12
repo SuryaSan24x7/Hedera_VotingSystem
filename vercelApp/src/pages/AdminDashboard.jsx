@@ -130,6 +130,9 @@ function AdminDashboard() {
   const goVote = () => {
     navigate('/voter');
   };
+  const goBack =()=>{
+    navigate('/');
+  }
 return (
   <div>
     <nav className="navbar navbar-dark bg-primary">
@@ -137,6 +140,9 @@ return (
         <a className="navbar-brand">Admin Dashboard</a>
         <form className="d-flex">
           <button className="btn btn-outline-light" onClick={goVote}>Voter Dashboard</button>
+        </form>
+        <form className="d-flex">
+          <button className="btn btn-outline-light" onClick={goBack}>Back to Demo</button>
         </form>
       </div>
     </nav>
