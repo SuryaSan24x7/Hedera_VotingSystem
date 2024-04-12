@@ -31,9 +31,6 @@ Welcome to the Hedera Voting System, a decentralized application (DApp) built on
 ### Setup
 
 1. **Clone the Repository**
-### Setup
-
-1. **Clone the Repository**
 ```
 git clone [repository-url]
 cd Hedera_VotingSystem
