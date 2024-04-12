@@ -12,7 +12,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<AdminDemo/>}/>
-          <Route path="/votedemo" element={<VoterDemo/>}/>
+          <Route path="/voter-demo/:contractAddress" element={<VoterDemo/>}/>
           <Route path="/admin" element={ <AdminDashboard /> } />
           <Route path="/voter" element={ <VoterDashboard /> } />
         </Routes>

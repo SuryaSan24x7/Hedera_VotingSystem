@@ -99,7 +99,7 @@ const VoterDemo = (contractAddress) => {
           <a className="navbar-brand text-light">Voter Dashboard</a>
           <form className="d-flex">
             <button className="btn btn-outline-light" onClick={handleAdmin}>
-              Logout
+              Admin Demo
             </button>
           </form>
         </div>

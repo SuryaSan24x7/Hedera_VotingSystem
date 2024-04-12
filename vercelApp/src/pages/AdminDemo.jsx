@@ -165,8 +165,8 @@ function AdminDemo() {
     }
   }
 
-  const voterDemo = (contractAddress) => {
-    <VoterDemo contractAddress={contractAddress}/>
+  const voterDemo = () => {
+    navigate(`/voter-demo/${contractAddress}`);
   };
   const goAdmin =()=>{
     navigate("/admin")
@@ -177,7 +177,7 @@ function AdminDemo() {
         <div className="container-fluid">
           <a className="navbar-brand">Admin Demo</a>
           <form className="d-flex">
-            {!(contractAddress === undefined) && <button className="btn btn-outline-light" onClick={voterDemo(contractAddress)}>
+            {!(contractAddress === undefined) && <button className="btn btn-outline-light" onClick={voterDemo()}>
               Voter Dashbord Demo
             </button>}
           </form>
