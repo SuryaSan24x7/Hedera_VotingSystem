@@ -360,4 +360,4 @@ function AdminDemo() {
   );
 }
 
-export default AdminDashboard;
+export default AdminDemo;
