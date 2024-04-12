@@ -120,7 +120,8 @@ function AdminDashboard() {
             const data = await votingContract.viewCandidatesInElection(electionId);
             setCandidates(data[0].map((id, index) => ({ 
               id: Number(id),
-              name: data[1][index]
+              name: data[1][index],
+              voteCount : Number(data[2][index])
           })));
         } catch (error) {
             console.error("Error fetching candidates:", error);
