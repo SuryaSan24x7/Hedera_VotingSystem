@@ -8,8 +8,6 @@ import abi from "../contracts/abi";
 import Vote from "../components/Vote";
 
 const VoterDemo = ({ contractAddress }) => {
-  
- 
   const navigate = useNavigate(); 
   const [walletData, setWalletData] = useState();
   const [account, setAccount] = useState();
