@@ -19,7 +19,8 @@ const VoterDemo = ({ contractAddress }) => {
   const [executeLinkSt, setExecuteLinkSt] = useState();
   const [activeElections, setActiveElections] = useState([]);
   const [candidates, setCandidates] = useState([]);
-  const contractAddress = {contractAddress};
+  const contractAddr = {contractAddress};
+  console.log(contractAddr);
   const handleAdmin = () => {
     navigate("/");
   };
@@ -53,7 +54,7 @@ const VoterDemo = ({ contractAddress }) => {
       if (contractAddress === undefined) {
         alert("🛑 Deploy a contract first! 🛑");
       } else {
-        await Vote(walletData, contractAddress, electionId, candidateId);
+        await Vote(walletData, contractAddr, electionId, candidateId);
         
       }
     }
