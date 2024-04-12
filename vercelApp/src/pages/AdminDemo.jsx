@@ -167,6 +167,9 @@ function AdminDemo() {
   const voterDemo = () => {
     <VoterDemo contractAddress={contractAddress}/>
   };
+  const goAdmin =()=>{
+    navigate("/admin")
+  }
   return (
     <div>
       <nav className="navbar navbar-dark bg-primary">
@@ -176,6 +179,11 @@ function AdminDemo() {
             {!(contractAddress === undefined) && <button className="btn btn-outline-light" onClick={voterDemo}>
               Voter Dashbord Demo
             </button>}
+          </form>
+          <form className="d-flex">
+            <button className="btn btn-outline-light" onClick={goAdmin}>
+              View Admin Dashbord
+            </button>
           </form>
         </div>
       </nav>

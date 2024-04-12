@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Routes,Navigate } from 'react-router-do
 import AdminDashboard from './pages/AdminDashboard';
 import VoterDashboard from './pages/VoterDashboard';
 import AdminDemo from './pages/AdminDemo';
-import { login, logout } from './Auth/Auth';
 
 function App() {
   const [user, setUser] = useState(null);
