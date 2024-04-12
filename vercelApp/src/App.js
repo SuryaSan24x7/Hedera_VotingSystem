@@ -8,7 +8,7 @@ function App() {
   const [user, setUser] = useState(null);
 
   return (
-    <AuthContext.Provider value={{ user, setUser, login, logout }}>
+    
       <Router>
         <Routes>
           <Route path="/" element={<AdminDemo/>}/>
@@ -16,7 +16,7 @@ function App() {
           <Route path="/voter" element={ <VoterDashboard /> } />
         </Routes>
       </Router>
-    </AuthContext.Provider>
+  
   );
 }
 
