@@ -16,11 +16,11 @@ function App() {
     <AuthContext.Provider value={{ user, setUser, login, logout }}>
       <Router>
         <Routes>
-          <Route path="/temp" element={<Login />} />
+          <Route path="/" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/adminlogin" element={<AdminLogin />} />
           <Route path="/adminsignup" element={<AdminSignup />} />
-          <Route path="/" element={ user ? <AdminDashboard /> : <Navigate to="/AdminLogin" />} />
+          <Route path="/" element={ user ? <AdminDashboard /> : <Navigate to="/adminLogin" />} />
           <Route path="/voter" element={ user ? <VoterDashboard /> : <Navigate to="/" />} />
         </Routes>
       </Router>
