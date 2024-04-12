@@ -165,7 +165,7 @@ function AdminDemo() {
     }
   }
 
-  const voterDemo = () => {
+  const voterDemo = (contractAddress) => {
     <VoterDemo contractAddress={contractAddress}/>
   };
   const goAdmin =()=>{
@@ -177,7 +177,7 @@ function AdminDemo() {
         <div className="container-fluid">
           <a className="navbar-brand">Admin Demo</a>
           <form className="d-flex">
-            {!(contractAddress === undefined) && <button className="btn btn-outline-light" onClick={voterDemo}>
+            {!(contractAddress === undefined) && <button className="btn btn-outline-light" onClick={voterDemo(contractAddress)}>
               Voter Dashbord Demo
             </button>}
           </form>
