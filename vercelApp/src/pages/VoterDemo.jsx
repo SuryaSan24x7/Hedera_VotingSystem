@@ -23,7 +23,7 @@ const VoterDemo = ({ contractAddress }) => {
   const [candidates, setCandidates] = useState([]);
   const contractAddress = {contractAddress};
   const handleAdmin = () => {
-    navigate("/admin");
+    navigate("/");
   };
   async function connectWallet() {
     if (account !== undefined) {
