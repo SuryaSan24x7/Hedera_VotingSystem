@@ -24,7 +24,7 @@ Welcome to the Hedera Voting System, a decentralized application (DApp) built on
 ## Getting Started
 
 ### Prerequisites
-- Ensure you have Node.js installed on your machine.
+- Ensure you have **Node.js** installed on your machine.
 - MetaMask extension installed on your browser for interacting with the blockchain.
 - Access to a Hedera account with sufficient HBAR for transaction fees.
 
