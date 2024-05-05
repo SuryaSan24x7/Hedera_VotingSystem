@@ -8,18 +8,25 @@ async function ConnectWallet() {
 	const provider = new ethers.providers.Web3Provider(window.ethereum, "any");
 
 	// SWITCH TO HEDERA TEST NETWORK
-	console.log(`- Switching network to the s ${network}...🟠`);
+	console.log(`- Switching network to the Hedera ${network}...🟠`);
 	let chainId;
-	
+	if (network === "testnet") {
+		chainId = "0x128";
+	} else if (network === "previewnet") {
+		chainId = "0x129";
+	} else {
+		chainId = "0x127";
+	}
+
 	await window.ethereum.request({
 		method: "wallet_addEthereumChain",
 		params: [
 			{
-				chainName: `sEPOLIA ${network}`,
-				chainId: 11155111,
-				nativeCurrency: { name: "ETH", symbol: "SepoliaETH", decimals: 18 },
-				rpcUrls: [`https://sepolia.infura.io/v3/`],
-				blockExplorerUrls: [`https://sepolia.etherscan.io/`],
+				chainName: `Hedera ${network}`,
+				chainId: chainId,
+				nativeCurrency: { name: "HBAR", symbol: "ℏℏ", decimals: 18 },
+				rpcUrls: [`https://${network}.hashio.io/api`],
+				blockExplorerUrls: [`https://hashscan.io/${network}/`],
 			},
 		],
 	});
