@@ -16,9 +16,9 @@ async function ConnectWallet() {
 		method: "wallet_addEthereumChain",
 		params: [
 			{
-				chainName: `sEPOLIA ${network}`,
+				chainName: `Sepolia test network`,
 				chainId: "0xaa36a7",
-				nativeCurrency: { name: "ETH", symbol: "SepoliaETH", decimals: 18 },
+				nativeCurrency: { name: "ETH", symbol: "eth", decimals: 18 },
 				rpcUrls: [`https://sepolia.infura.io/v3/`],
 				blockExplorerUrls: [`https://sepolia.etherscan.io/`],
 			},
