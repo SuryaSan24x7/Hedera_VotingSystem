@@ -18,7 +18,7 @@ async function ConnectWallet() {
 			{
 				chainName: `Sepolia test network`,
 				chainId: "0xaa36a7",
-				nativeCurrency: { name: "ETH", symbol: "eth", decimals: 18 },
+				nativeCurrency: { name: "ETH", symbol: "ETH", decimals: 18 },
 				rpcUrls: [`https://sepolia.drpc.org`],
 				blockExplorerUrls: [`https://sepolia.etherscan.io/`],
 			},
