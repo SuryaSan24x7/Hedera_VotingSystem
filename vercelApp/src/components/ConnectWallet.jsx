@@ -11,12 +11,13 @@ async function ConnectWallet() {
 	console.log(`- Switching network to the s ${network}...🟠`);
 	let chainId;
 	
+
 	await window.ethereum.request({
 		method: "wallet_addEthereumChain",
 		params: [
 			{
 				chainName: `sEPOLIA ${network}`,
-				chainId: 0x11155111,
+				chainId: "0x11155111",
 				nativeCurrency: { name: "ETH", symbol: "SepoliaETH", decimals: 18 },
 				rpcUrls: [`https://sepolia.infura.io/v3/`],
 				blockExplorerUrls: [`https://sepolia.etherscan.io/`],
