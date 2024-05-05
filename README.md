@@ -24,7 +24,7 @@ Welcome to the Hedera Voting System, a decentralized application (DApp) built on
 ## Getting Started
 
 ### Prerequisites
-- Ensure you have Node.js installed on your machine.
+- Ensure you have **Node.js** installed on your machine.
 - MetaMask extension installed on your browser for interacting with the blockchain.
 - Access to a Hedera account with sufficient HBAR for transaction fees.
 
@@ -66,7 +66,8 @@ npm start
 
 Access the web application through `http://localhost:3000` after starting the frontend. Use the Discord bot within your configured Discord server to interact with the application using simple commands.
 
-
+## Working Demo 
+https://hedera-voting-system-git-main-suryasan24x7s-projects.vercel.app/
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
